@@ -1,0 +1,49 @@
+<body>
+<h1 style="color:blue" align="center">Customer Service Portal</h1>
+<br>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+
+
+<ul>
+  
+  <li><a routerLink="/login">Login</a></li>
+  <li><a routerLink="/register">Register</a></li>
+    <li><a  routerLink="/create request">create request</a></li>
+   
+        <li><a  routerLink="/getrequestbystatus">get request</a></li>
+    
+        <li> <a  routerLink="/updatecustomerdetails">Update Customer Details</a></li>
+    
+            <li> <a  routerLink="/getcustomers">Get Registered Customers</a></li>
+    
+                <li><a  routerLink="/getrequests">Get requests</a></li>
+    
+                    <li><a  routerLink="/updaterequest">Update Request</a></li>
+</ul>
+
+<router-outlet></router-outlet>
+</body>

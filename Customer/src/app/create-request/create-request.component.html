@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div >
+    <h2>Enter the fields</h2>
+    <label class="form-label" for="form12">Enter Customer Id to create request </label>
+    <input type="number" name="customerid" [(ngModel)]="customerid"><br>
+
+
+    <label class="form-label" for="form12">Request Title </label>
+    <input type="text" id="form12" class="form-control"  [(ngModel)]="request.reqName"/><br>
+    <label class="form-label" for="form12">Request Description</label>
+    <input type="text" id="form12" class="form-control"  [(ngModel)]="request.reqdescription"/><br>
+
+    
+    <label class="form-label" for="Req type">Service Type</label>
+    <select [(ngModel)] ='request.servicetype' type="text" id="Req type" class="form-control"  style="width: 76.5%;">
+        
+        <option value="database">Database</option>
+        <option value="access">User Access Management</option>
+        <option value="applictaion related">Application</option>
+      </select><br>
+    <label class="form-label" for="assigned to">Assigned to</label>
+    <input type="text" id="assigned to" class="form-control"  [(ngModel)]="request.assignedto"/><br>
+    <label class="form-label" for="status">Request Status</label>
+    <input type="text" id="status" class="form-control"  [(ngModel)]="request.reqStatus"/><br>
+  
+    <button (click)='createRequest()' class='btn btn-primary'> Save Book</button>
+    <br><br>
+    <button routerLink="/home" class='btn btn-dark' style='float:end;'>Returnto Home </button>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+ 
+<h1>Get Request</h1>
+<html lang="en">
+
+    <head>
+    
+      <meta charset="UTF-8">
+    
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+    
+    <body>
+      customerid:<input type="number" name="customerid" [(ngModel)]="customerid"><br><br>
+      Req Status:<input type="text" name="status" [(ngModel)]="status"><br><br>
+
+      <button (click)=getrequest() class="btn btn-success">
+        Search
+      </button><br><br>
+      <app-response *ngIf="request" [requests]="request"></app-response>
+    
+    </body>
+    
+    </html>
+    
+    
+    <!-- <html>
+  <body></body>
+<div class="container">
+  <div>
+    customerid:<input type="number" name="customerid" [(ngModel)]="customerid"><br><br>
+      Req Status<input type="text" name="status" [(ngModel)]="status"><br><br>
+  </div>
+  <button (click)=getrequest() class="btn btn-success">
+    Search
+  </button>
+ 
+</div><br><br>
+<app-response *ngIf="request" [request]="request"></app-response> 
+</html> -->
+<!-- <app-searchbookresponse [dataNeeded]=books></app-searchbookresponse> -->
